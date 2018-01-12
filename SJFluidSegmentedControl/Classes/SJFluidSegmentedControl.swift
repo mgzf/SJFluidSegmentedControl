@@ -196,7 +196,7 @@ import UIKit
 }
 
 /// A segmented control with custom appearance and interactive animations.
-public class SJFluidSegmentedControl: UIView, UIGestureRecognizerDelegate {
+open class SJFluidSegmentedControl: UIView, UIGestureRecognizerDelegate {
     
     // MARK: Public properties
     
@@ -522,7 +522,7 @@ public class SJFluidSegmentedControl: UIView, UIGestureRecognizerDelegate {
     // MARK: - View Lifecycle
     
     /// Lays out subviews.
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         self.layoutIfNeeded()
         didViewLayoutSubviews = true
